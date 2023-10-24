@@ -5,16 +5,79 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tabelas</title>
     <style>
-      
+      th, td{
+        border: 1px solid black;
+        width: 70px;
+        height: 25px;
+      }
+      table{
+       border-collapse: collapse;
+      }
+      th.especial, td.nume{
+        background-color: grey;
+        color: white;
+      }
+      td.num{
+        text-align: center;
+      }
     </style>
 
 </head>
 <body>
     <table>
-        <th>Área</th>
-        <th>Disciplinas</th>
-        <th>Notas</th>
-        <th>Média</th>
+        <tr>
+            <th rowspan="2" class="especial">Área</th>
+            <th rowspan="2" class="especial">Disciplinas</th>
+            <th colspan="2" class="especial">Notas</th>
+            <th rowspan="2" class="especial">Média</th>
+        </tr>
+        <tr>
+           <th class="especial">Nota 1</th> 
+           <th class="especial">Nota 2</th>
+        <tr>
+            <th rowspan="4"  >Exatas</th>
+            <td>Matemática</td>
+            <td class="num">0.0</td>
+            <td class="num">0.0</td>
+            <td class="num">0.0</td>
+        </tr>
+        <tr>
+            <td>Física</td>
+            <td class="num">0.0</td>
+            <td class="num">0.0</td>
+            <td class="num">0.0</td>
+        </tr>
+        <tr>
+            <td>Química</td>
+            <td class="num">0.0</td>
+            <td class="num">0.0</td>
+            <td class="num">0.0</td>
+        </tr>
+        <tr>
+            <td>Biologia</td>
+            <td class="num">0.0</td>
+            <td class="num">0.0</td>
+            <td class="num">0.0</td>
+        </tr>
+        <tr>
+            <th colspan="4" class="especial">Média de Exatas</th>
+            <td class="num">0.0</td>
+        </tr>
+        <tr>
+            <th rowspan="2" scope="colgroup">Humanas</th>
+            <td colspan="2">História</td>
+            <td class="num">0.0</td>
+            <td class="num">0.0</td>
+        </tr>
+        <tr>
+            <td colspan="2">Geografia</td>
+            <td class="num">0.0</td>
+            <td class="num">0.0</td>
+        </tr>
+        <tr>
+            <th colspan="4" class="especial" scope="col">Média de Humanas</th>
+            <td class="nume" >0.0</td>
+        </tr>
     </table>
 </body>
 </html>
